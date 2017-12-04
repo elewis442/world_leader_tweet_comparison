@@ -46,5 +46,5 @@ This file will take in the data for each provided political figure, and attempt 
 
 In addition to the above five python files, the git repository also contains a file folder containing all the necessary extracted data, including the original raw data csv files for each world leader extracted from the Twitter API, the cleaned-up data csv files for each leader, as well as cleaned-up files for each leader that’s been normalized to have the same number of rows (specifically 800), as Tukey statistical tests require datasets of equivalent size. 
 
-Lastly, the data folder also contains the original text file of fifth grade sample writing, as well as the csv file containing that same data, the data samples found by extracting samples from the internet.
+Lastly, the data folder also contains the original text file of fifth grade sample writing, as well as the csv file containing that same data, the data samples found by extracting samples from the internet, totaling 431 samples.
 
