@@ -3,9 +3,9 @@
 
 ***Abstract***
 
-With the ubiquity of social media, and the near-requirement of every public figure to make use of it, it seems like every major world leader now has an active Twitter account. With the current United States president often making headlines based on his use of the Twitter platform, parsing complex geopolitical topics into 140 (or now 280) characters, it felt like the general political discourse has been simplified. Hence the core idea to this data science project: is the Twitter output of major world leaders more or less complex than the average writing of a fifth grader?
+With the ubiquity of social media, and the near-requirement of every public figure to make use of it, it seems like every major world leader now has an active Twitter account. With the current United States president often making headlines based on his use of the Twitter platform, parsing complex geopolitical topics into 140 (or now 280) characters, it feels like today’s general political discourse has been simplified. Hence the core idea to this data science project: is the Twitter output of major world leaders more or less complex than the average writing of a fifth grader?
 
-This project intends to find an answer to this question. Through the data gathered in order to answer this first question, it will also attempt to try and answer two other questions, the first being anecdotal and the second perhaps having an actual application: whom amongst the current important political figures of the United States and the UK (specifically Hillary Clinton, Donald Trump, Barack Obama, Bernie Sanders, Jeremy Corbyn, and David Cameron)  whose tweets on average have the most linguistic complexity, and is it possible to develop a machine learning model that can accurately guess a tweet’s author, based on the sentence’s complexity?
+This project intends to find an answer to this question. As well, with the data gathered in order to answer this first question, it will also attempt to try and answer two further questions: whom amongst the current important political figures of the United States and the UK (specifically Hillary Clinton, Donald Trump, Barack Obama, Bernie Sanders, Jeremy Corbyn, and David Cameron)  write tweets with the most linguistic complexity, and is it possible to develop a machine learning model that can accurately guess a tweet’s author, based on the sentence’s linguistic complexity?
 
 
 ***Required Files and Setup***
@@ -18,7 +18,7 @@ The five python files contained in the git repository are:
 
 Prerequisite Files Needed: None (Twitter API access keys required)
 
-A script which makes a call to the Twitter API, and extracts up to the most recent 3,240 tweets of a provided Twitter user, specifically their tweet ID, the date of the tweet’s creation, and the raw text in UTF-8 format, which is returned in a csv format. Original script was found from a git repository online (source can be found in file itself), with some changes made to make the output easier to use for future data cleanup steps. 
+A script which makes a call to the Twitter API, and extracts up to the most recent 3,240 tweets of a provided Twitter user, specifically their tweet ID, the date of the tweet’s creation, and the raw text in UTF-8 format, which is returned in a csv format. Original script was found from a git repository online (source can be found in file itself), with some changes made to utilize the pandas library as opposed to the csv library. 
 
 *tweet_cleaning.py*
 
@@ -44,4 +44,7 @@ Prerequisite Files Needed: The cleaned-up csv data files of each world leader
 
 This file will take in the data for each provided political figure, and attempt to create a machine learning classifier that will attempt to discern a tweet’s author based on a tweet’s linguistic complexity.
 
-In addition to the above five python files, the git repository also contains a file folder containing all the necessary extracted data, including the original raw data csv files for each world leader extracted from the Twitter API, the cleaned-up data csv files for each leader, as well as cleaned-up files for each leader that’s been normalized to have the same number of rows (specifically 800), as Tukey statistical tests require datasets of equivalent size. Lastly, is also contained the original text file of fifth grade sample writing, as well as the csv file containing that same data, the data samples found by extracting samples from the internet, and then manually placing them into a csv file.
+In addition to the above five python files, the git repository also contains a file folder containing all the necessary extracted data, including the original raw data csv files for each world leader extracted from the Twitter API, the cleaned-up data csv files for each leader, as well as cleaned-up files for each leader that’s been normalized to have the same number of rows (specifically 800), as Tukey statistical tests require datasets of equivalent size. 
+
+Lastly, the data folder also contains the original text file of fifth grade sample writing, as well as the csv file containing that same data, the data samples found by extracting samples from the internet.
+
