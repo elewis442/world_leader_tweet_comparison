@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 
 
+# Below are formulas from TextStat that evaluate readability, formatted so they can be used with np.vectorize
+
 def flesch_kincaid_grade(string):
     result = ts.flesch_kincaid_grade(string)
     return result
