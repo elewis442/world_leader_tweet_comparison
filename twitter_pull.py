@@ -55,8 +55,11 @@ def get_all_tweets(screen_name):
     id_list = []
     created_at_list = []
     text_list = []
-
-    # The following code below was augmented from the original, to more easily get code into a preferred csv format
+    
+    
+    # Puts tweets into csv format (id, created_at, text)
+    
+    # Makes a list of ids, a list of created_at dates, and a list of tweet text
 
     for tweet in alltweets:
         id_list.append(tweet.id_str)
@@ -66,6 +69,9 @@ def get_all_tweets(screen_name):
         final_string = result_string.encode("utf-8")
         text_list.append(final_string)
 
+    
+    # Assembles the lists into a 3-column DataFrame, then transforms that into csv
+        
     tweets = {'ID': id_list,
              'Created_At': created_at_list,
              'Text': text_list}
