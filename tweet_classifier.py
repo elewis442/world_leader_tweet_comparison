@@ -15,9 +15,8 @@ columns = [ 'Flesch_Grade', 'Automated_Readability_Index', 'Coleman_Liau_Index',
 
 def main():
     '''
-    Concatenates all world leader together, and then creates a simple machine-learning model to attempt to
-    see if a tweet classifier model is possible, that will accurately predict the tweet of a leader based on the
-    text complexity of their tweets
+    Concatenates the tweets from all the world leaders, then creates a machine-learning model. 
+    Tests whether the model is accurate.
     '''
     sanders_text = pd.read_csv('CleanReducedSenSandersTweets.csv')
     obama_text = pd.read_csv('CleanReducedBarackObamaTweets.csv')
