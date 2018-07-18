@@ -78,7 +78,8 @@ def main():
     plt.show()
 
     '''
-    Assembles fifth grade corpus data and data from each world leader into a single DataFrame, then performs a Tukey test.
+    Assembles fifth grade corpus data and data from each world leader into a single DataFrame, then performs a Tukey 
+    test.
     Note that the Tukey test requires same-size datasets, so about half the data from each world leader is left out.
     '''
     reduced_obama_fr = obama_fr[:431]
