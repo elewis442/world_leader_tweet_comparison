@@ -79,9 +79,8 @@ def main():
 
 
     '''
-    Concatenate all world leader as well as fifth grade corpus data together, to transform and perform tukey test
-    Note, due to limitations of Tukey test, datasets need to be of same size, hence the truncation of world leader
-    results to roughly half the original cardinality of their elements
+    Assembles fifth grade corpus data and data from each world leader into a single DataFrame, then performs Tukey test.
+    Note that the Tukey test requires same-size datasets, so about half the data from each world leader is left out.
     '''
     reduced_obama_fr = obama_fr[:431]
     reduced_clinton_fr = clinton_fr[:431]
